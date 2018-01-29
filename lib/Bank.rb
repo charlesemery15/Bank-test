@@ -12,13 +12,13 @@ attr_reader :transactions
 
   def deposit(num)
     @balance += num
-    value = "#{num}|| "
+    value = "#{'%.2f' % num}|| "
     transaction(value)
   end
 
   def withdraw(num)
     @balance -= num
-    value = " ||#{num}"
+    value = " ||#{'%.2f' % num}"
     transaction(value)
   end
 

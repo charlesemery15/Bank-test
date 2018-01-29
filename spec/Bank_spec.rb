@@ -2,6 +2,18 @@ require "Bank"
 
 describe Bank do
 
+  describe "#initialize" do
+
+    it "should start with the default balance of 0" do
+      expect(subject.balance).to eq(0)
+    end
+
+    it "should start with 0 transactions" do
+      expect(subject.transactions).to be_empty
+    end
+
+  end
+
   describe "#deposit" do
 
     it "should let a user deposit an amount" do
@@ -41,7 +53,7 @@ describe Bank do
     it "should print statements out in reverse chronolgical order" do
       subject.deposit(1000)
       subject.withdraw(500)
-      expect(subject.statement).to eq("Date||Credit||Debit||Balance\n29/01/18|| ||500||500.00\n29/01/18||1000|| ||1000.00")
+      expect(subject.statement).to eq("Date||Credit||Debit||Balance\n#{Time.new.strftime("%d/%m/%y")}|| ||500.00||500.00\n#{Time.new.strftime("%d/%m/%y")}||1000.00|| ||1000.00")
     end
   end
 
