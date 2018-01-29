@@ -3,6 +3,7 @@ class Bank
 DEFAULT_BALANCE = 0
 
 attr_accessor :balance
+attr_reader :transactions
 
   def initialize(balance = DEFAULT_BALANCE)
     @transactions = []
@@ -11,10 +12,32 @@ attr_accessor :balance
 
   def deposit(num)
     @balance += num
+    value = "#{num}|| "
+    transaction(value)
   end
 
   def withdraw(num)
     @balance -= num
+    value = " ||#{num}"
+    transaction(value)
+  end
+
+  def statement
+    column_titles + "\n" + @transactions.join("\n")
+  end
+
+  private
+
+  def time
+    Time.new.strftime("%d/%m/%y")
+  end
+
+  def column_titles
+    "Date||Credit||Debit||Balance"
+  end
+
+  def transaction(value)
+    @transactions.unshift("#{time}||#{value}||#{'%.2f'% @balance}")
   end
 
 end
