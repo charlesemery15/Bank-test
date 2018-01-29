@@ -1,12 +1,13 @@
-# Bank Tech Test
-===========
+Bank Tech Test
+===============
+
 * First attempt at a tech test for Makers Academy
 * Practice for dev interviews
 
-## Requirments
+Requirements
 --------------
  1. Deposits
- 2. Withdrawls
+ 2. Withdrawals
  3. View Account Statements
    - Date
    - Amount
@@ -30,13 +31,13 @@ So I can keep a record of my account
 I would like to print a copy of my bank statement.
 ```
 
-## Approach
+Approach
 -----------
 * TDD
 * OOD
 * Agile
 
-## For this Test I will use
+For this Test I will use
 ---------------------------
  * IRB - Interactive Ruby Shell (REPL specific to Ruby)
  * Data - Stored in memory rather than a database
