@@ -17,15 +17,21 @@ Requirements
 As a bank customer
 So I can save my money
 I would like to make a deposit to an account
+```
 
+```
 As a bank customer
 So I can buy things
 I would like to withdraw some of my money
+```
 
+```
 As a bank customer
 So I can manage my money
 I would like to view my bank transactions
+```
 
+```
 As a bank customer
 So I can keep a record of my account
 I would like to print a copy of my bank statement.
