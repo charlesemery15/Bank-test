@@ -1,3 +1,5 @@
-require_relative "../lib/Account.rb"
-require_relative "../lib/User.rb"
-require_relative "../lib/Statement.rb"
+# require "Users/charles/Projects/Tests/Monday/lib/Bank.rb"
+#
+# bank = Bank.new
+# bank.deposit(1000)
+# bank.balance
