@@ -53,18 +53,20 @@ For this Test I will use
 CRC Cards
 ----------
 
- |Class:              |User             |
- |--------------------------------------|
- |**Responsibilities**|**Collaborators**|
- |Name                |Account          |
-
  |Class:              |Account          |
  |--------------------------------------|
  |**Responsibilities**|**Collaborators**|
- |Manage transactions:|Statement        |
- | 1. Deposit         |User             |
- | 2. Withdraw        |                 |
+ |Store transactions  |Statement        |
+ |                    |Transaction      |
+ |                    |                 |
 
+ |Class:              |Transaction      |
+ |--------------------------------------|
+ |**Responsibilities**|**Collaborators**|
+ |Manage transactions:|Account          |
+ | 1. Deposit         |                 |
+ | 2. Withdraw        |                 |
+ | 3. Time            |                 |
 
  |Class:              |Statement        |
  |--------------------------------------|
