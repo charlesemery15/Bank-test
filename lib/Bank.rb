@@ -13,4 +13,8 @@ attr_accessor :balance
     @balance += num
   end
 
+  def withdraw(num)
+    @balance -= num
+  end
+
 end
