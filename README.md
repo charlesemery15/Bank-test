@@ -21,14 +21,8 @@ I would like to make a deposit to an account
 
 ```
 As a bank customer
-So I can buy things
+So I can remove my money
 I would like to withdraw some of my money
-```
-
-```
-As a bank customer
-So I can manage my money
-I would like to view my bank transactions
 ```
 
 ```
