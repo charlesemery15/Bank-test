@@ -49,3 +49,27 @@ For this Test I will use
  * IRB - Interactive Ruby Shell (REPL specific to Ruby)
  * Data - Stored in memory rather than a database
  * Tests - Feature tests spec file
+
+CRC Cards
+----------
+
+ |Class:              |User             |
+ |--------------------------------------|
+ |**Responsibilities**|**Collaborators**|
+ |Name                |Account          |
+
+ |Class:              |Account          |
+ |--------------------------------------|
+ |**Responsibilities**|**Collaborators**|
+ |Manage transactions:|Statement        |
+ | 1. Deposit         |User             |
+ | 2. Withdraw        |                 |
+
+
+ |Class:              |Statement        |
+ |--------------------------------------|
+ |**Responsibilities**|**Collaborators**|
+ |Time                |Account          |
+ |Credit              |                 |
+ |Debit               |                 |
+ |Balance             |                 |
