@@ -42,6 +42,7 @@ Approach
 * TDD
 * OOD
 * Agile
+* Using Ruby
 
 For this Test I will use
 ---------------------------
